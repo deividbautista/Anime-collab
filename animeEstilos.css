@@ -4,14 +4,25 @@
 }
 
 body{
-    background-color: #000000;
+    background-color: #000000f3;
     width: 100%;
     height: 100%;
+}
+.enlace{
+    position: absolute;
+    float: left;
+    margin-top: -6em;
+
+}
+.logo{
+    float: left;
+    width: 200px;
+    height: 200px;
 }
 .cabecera{
     background-image: url(https://media.giphy.com/media/6705G9I9sUcNCaJF10/giphy.gif);
     background-size: cover;
-    width: 100%;
+    width: 120%;
     height: 700px;
 }
 .cabecera2{
@@ -45,28 +56,31 @@ header{
 .navegacion{
     width: 1500px;
     margin: 30px auto;
-    
 }
-
-.navegacion ul{
+.navmenu{
+    float: right;
+}
+.navmenu ul{
     list-style: none;
+    overflow: hidden;
+    margin-top: -1em;
+    margin-right: 2em;
 }
-
 .menu > li{
-    position: relative;
-    display: inline-block;
+    float: left;
 }
 
 .menu > li > a{
     display: block;
     padding: 15px 20px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: "open sans";
     text-decoration: none;
 }
 
-.menu li a:hover{
-    color: rgb(60, 14, 87) ;
+li a.active, li a:hover{
+    border-radius:5px;
+    background-color: rgb(60, 14, 87) ;
     transition: all .3s;
 }
 
@@ -74,16 +88,18 @@ header{
 
 .submenu{
     position: absolute;
+    border-radius:5px;
     background: #333333 ;
-    width: 120%;
+    width: 150px;
     visibility: hidden;
-    opacity: 0;
+    opacity: 80%;
     transition: opacity 1.5s;
 }
 
 .submenu li a{
     display: block;
-    padding: 10px;
+    border-radius:5px;
+    padding: 12px;
     color: rgb(255, 228, 228);
     font-family: "open sans";
     text-decoration: none;
@@ -124,7 +140,9 @@ h3{
     transition: 0.25s;
 
 }
-
+#check{
+    display:none;
+}
 .card1:hover{
     transform: translateY(-15px);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.411) ;
@@ -145,4 +163,44 @@ h4{
 }
 a{
     font-style: none;
+}
+.checkbtn{
+    font-size: 30px;
+    position: absolute;
+    top: 0.6em;
+    right: 0.8em;
+    display: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+@media (max-width:825px){
+    .checkbtn{
+        display: block;
+    }
+    .menu{
+        position:fixed;
+        top: 80px;
+        left: 100000px;
+        width: 100%;
+        height: 100vh;
+        background:rgb(62, 91, 134);
+        text-align: center;
+        transition: all 0.5s;
+    }
+    .menu li{
+        display: block; 
+        margin: 30px 0;
+        line-height: 30px;
+    }
+    .menu li{
+        display: block; 
+        line-height: 20px;
+    }
+    .menu li a{
+        padding: 16px;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
 }
