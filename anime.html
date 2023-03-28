@@ -11,22 +11,22 @@
 </head>
 
 <body>
+  <!--
+  Inicio Apartado de menú responsive
+  -->
   <header>
     <nav class="navegacion">
       <a href="anime.html" class="enlace">
-        <img class="logo" src="imagenes/logo_transparent.png" alt="" >
+        <img class="logo" src="imagenes/logo_transparent.png" alt="">
       </a>
     </nav>
-    <!--
-  Apartado del menú principal
--->
     <nav class="navmenu">
       <input type="checkbox" id="check" class="check">
-      <label for="check" class="checkbtn" id="checkicon">        
+      <label for="check" class="checkbtn" id="checkicon">
         <i id="icon" class="fa-solid fa-bars"></i>
       </label>
       <ul class="menu">
-        <li><a href="#">Inicio</a></li>
+        <li><a href="#cabecera">Inicio</a></li>
         <li><a href="#">Nosotros </a></li>
         <li><a href="#">Servicios</a>
           <ul class="submenu">
@@ -38,23 +38,20 @@
         <li><a href="#">Contactos</a></li>
       </ul>
     </nav>
-    <!--
-  Fin apartado de menú principal
--->
     <br>
     <br>
     <hr>
   </header>
-  <div class="cabecera">
+  <!--
+  Fin apartado menú
+  -->
+  <div class="cabecera" id="cabecera">
     <H1 class="titulo">
       MUNDO オタク
     </H1>
   </div>
   <hr class="hrP">
   <br>
-  <!--
-  Apartado del contenido principal
--->
   <div class="contenido">
     <H1 class="titulo2">¿Qué es el anime?</H1><br>
 
@@ -74,7 +71,7 @@
     <hr>
     <br>
     <p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/oOqu2GioxZs" title="YouTube video player"
+      <iframe class="video_index" width="560" height="315" src="https://www.youtube.com/embed/oOqu2GioxZs" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </p>
@@ -171,13 +168,11 @@
       </div>
     </div>
   </div>
-  <!--
-  Fin apartado del contenido principal
--->
 
 </body>
 <!--
   Apartado para enlazar archivo java script
 -->
 <script src="main_responsive.js"></script>
+
 </html>
