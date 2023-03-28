@@ -109,6 +109,8 @@ li a.active, li a:hover{
     opacity: 1;
 }
 /*Fin submenu*/
+
+/*Contenido principal*/
 p{
     text-align:justify;
     font-size: 30px;
