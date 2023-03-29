@@ -174,6 +174,7 @@ a{
     color: white;
     cursor: pointer;
 }
+/*apartado responsive*/
 
 @media (max-width:825px){
     .cabecera{
