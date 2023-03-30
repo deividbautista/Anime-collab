@@ -45,12 +45,12 @@ header{
 /**Titulos principales**/
 .titulo{
     padding-top: 110px;
-    padding-left: 0.5em;
+    padding-left: 0.7em;
     font-size: 7;
     color: antiquewhite;
 }
 .titulo2{
-    padding-left: 0.5em;
+    padding-left: 0.7em;
     font-size: 7;
     color: antiquewhite;
 }
@@ -63,11 +63,11 @@ header{
 .navmenu{
     float: right;
 }
-.navmenu ul{
+.navmenu .menu{
     list-style: none;
     overflow: hidden;
-    margin-top: -1em;
     margin-right: 2em;
+    margin-top: -1em;
 }
 .menu > li{
     float: left;
@@ -79,6 +79,8 @@ header{
     color: rgb(255, 255, 255);
     font-family: "open sans";
     text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
 }
 
 li a.active, li a:hover{
@@ -89,6 +91,10 @@ li a.active, li a:hover{
 
 /*submenu*/
 
+.submenu ul{
+    margin-top: -1em;
+}
+
 .submenu{
     position: absolute;
     border-radius:5px;
@@ -97,6 +103,7 @@ li a.active, li a:hover{
     visibility: hidden;
     opacity: 80%;
     transition: opacity 1.5s;
+    list-style: none;
 }
 
 .submenu li a{
@@ -106,6 +113,8 @@ li a.active, li a:hover{
     color: rgb(255, 228, 228);
     font-family: "open sans";
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
 }
 .menu li:hover .submenu{
     visibility: visible;
@@ -115,7 +124,7 @@ p{
     text-align:justify;
     font-size: 30px;
     color:  rgb(255, 255, 255);
-    padding-left: 0.5em;
+    padding-left: 0.7em;
 }
 
 .contenido{
@@ -152,8 +161,8 @@ h3{
 }
 
 .imgCard{
-    width: 320px;
-    height: 220px;
+    width: 100%;
+    height: 50%;
 }
 .pCard{
     color: #ffffff;
@@ -203,10 +212,6 @@ a{
     .pCard{
         text-align:justify;
     }
-    .imgCard{
-        width: 250px;
-    height: 150px;
-    }
     h4{
         font-size: 19px;
     }
@@ -245,13 +250,16 @@ a{
         line-height: 20px;
     }
     .menu li a{
-        padding: 16px;
-        text-transform: uppercase;
         font-size: 20px;
     }
     .submenu{
+        background-color:rgb(100, 20, 150);
         width: 80%;
         height: 100%;
+        left: 10%;
+    }
+    .submenu li{
+        justify-content: right;
     }
     .submenu li a{
         padding: 10px;
