@@ -2,7 +2,7 @@
     margin:0;
     padding: 0;
 }
-
+/*Estructura principal*/
 body{
     background-color: #000000f3;
 }
@@ -175,6 +175,9 @@ h4{
 }
 a{
     font-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: antiquewhite;
 }
 .checkbtn{
     font-size: 30px;
