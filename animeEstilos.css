@@ -115,6 +115,7 @@ p{
     text-align:justify;
     font-size: 30px;
     color:  rgb(255, 255, 255);
+    padding-left: 0.5em;
 }
 
 .contenido{
@@ -123,6 +124,7 @@ p{
 h3{
     color: rgb(255, 255, 255);
     font-size: 30px;
+    padding-left: 0.5em;
 }
 
 .contenedorA{
@@ -174,7 +176,6 @@ a{
     color: white;
     cursor: pointer;
 }
-/*apartado responsive*/
 
 @media (max-width:825px){
     .cabecera{
@@ -192,18 +193,26 @@ a{
     .video_index{
         width: 100%;
     }
-    .imgCard{
-        width: 220px;
-        height: 150px;
+    .contenedorA{
+        max-width: 100%;
+    }
+    .card1{
+        width: 410px;
+        height: 410px;
     }
     .pCard{
         text-align:justify;
+    }
+    .imgCard{
+        width: 250px;
+    height: 150px;
     }
     h4{
         font-size: 19px;
     }
     p{
         font-size: 15px;
+
     }
     .logo{
         padding-top: 15px;
