@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
 }
+
 /*Estructura principal*/
 body{
     background-color: #000000f3;
@@ -58,7 +59,6 @@ header{
     color: antiquewhite;
 }
 /**Fin titulos principales**/
-
 .navegacion{
     width: 100%;
     margin: 30px auto;
@@ -93,7 +93,6 @@ li a.active, li a:hover{
 }
 
 /*submenu*/
-
 .submenu ul{
     margin-top: -1em;
 }
@@ -198,6 +197,68 @@ a:hover{
     cursor: pointer;
 }
 
+/*Pie de pagina...*/
+.pie_de_pagina{
+    width: 100%;
+    background-color: #1c0a1d;
+}
+.pie_de_pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    height: 200px;
+}
+.pie_de_pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie_de_pagina .grupo-1 .box figure img{
+    width: 300px;
+}
+.pie_de_pagina .grupo-1 h2{
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    padding-left: 1.3em;
+}
+.pie_de_pagina .grupo-1 p{
+    color: #efefefef;
+    font-size: 22px;
+    padding-left: 1.3em;
+    margin-bottom: 10px;
+}
+.pie_de_pagina .grupo-1 .red-social{
+    padding-left: 1.6em;
+}
+.pie_de_pagina .grupo-1 .red-social a{
+    display: inline-block;
+    border-radius: 2px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #962e8d6e;
+    text-align: center;
+}
+.pie_de_pagina .grupo-2 {
+    background-color: #130014;
+    padding: 15px 10px;
+    text-align: center;
+    color: #ffffff;
+} 
+
+/*Fin pie de pagina.*/
+
+
+/*Responsive*/
 @media (max-width:825px){
     .cabecera{
         width: 100%;
@@ -283,7 +344,23 @@ a:hover{
         padding: 10px;
         font-size: 15px;
     }
+    .pie_de_pagina .grupo-1{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        height: 50%;
+    }
+    .pie_de_pagina .grupo-1 .box figure img{
+        width: 250px;
+    }
+    .pie_de_pagina .grupo-1 p{
+        max-width: 84%;
+        font-size: 15px;
+    }
 }
+
+/*Animaciones*/
 @keyframes mostrarMenu{
     from{opacity:0;}
     to{opacity:1;}
