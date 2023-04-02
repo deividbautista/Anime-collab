@@ -63,6 +63,8 @@ header{
     width: 100%;
     margin: 30px auto;
 }
+
+/**Apartadó menú principal**/
 .navmenu{
     float: right;
 }
