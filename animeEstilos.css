@@ -5,7 +5,7 @@
 
 /*Estructura principal*/
 body{
-    background-color: #000000f3;
+    background-color: #110a11;
 }
 .enlace{
     position: absolute;
@@ -21,7 +21,7 @@ body{
 .hrP2{
     max-width: 76.5%;
 }
-/**Apartado de header y footer**/
+/**Apartado de cabeceras**/
 .cabecera{
     background-image: url(https://media.giphy.com/media/6705G9I9sUcNCaJF10/giphy.gif);
     background-size: cover;
@@ -38,13 +38,13 @@ body{
     border-style: solid;
 }
 header{
-    background-color: #000000;
+    background-color: #070007;
     width: 100%;
     position: fixed;
     z-index: 100;
     opacity: 98%;
 }
-/**Fin apartado de header y footer**/
+/**Fin apartado de cabeceras**/
 
 /**Titulos principales**/
 .titulo{
@@ -63,8 +63,6 @@ header{
     width: 100%;
     margin: 30px auto;
 }
-
-/**Apartadó menú principal**/
 .navmenu{
     float: right;
 }
@@ -108,6 +106,7 @@ li a.active, li a:hover{
     opacity: 80%;
     transition: opacity 1.5s;
     list-style: none;
+    transition: .1s;
 }
 
 .submenu li a{
@@ -124,7 +123,69 @@ li a.active, li a:hover{
     visibility: visible;
     opacity: 1;
 }
-/**Fin submenu**/
+
+/*Inicio sección boton de modo oscuro/claro */
+.button-switch{
+    padding:10px ;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px; 
+    height: 25px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e7b7f3;
+    
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(119, 102, 126);
+}
+  
+input:checked + .slider {
+    background-color: #3d173f;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 2.5px #1c0a1d;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 40px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+/*Fin sección boton de modo oscuro/claro */
+
 p{
     text-align:justify;
     font-size: 30px;
@@ -164,7 +225,7 @@ h3{
 .card1:hover{
     transform: translateY(-15px);
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.411) ;
-    background-color: #501e4cab;
+    background-color: #330f30bd;
 }
 
 .imgCard{
@@ -256,9 +317,68 @@ a:hover{
     padding: 15px 10px;
     text-align: center;
     color: #ffffff;
-} 
+}
 
-/*Fin pie de pagina.*/
+/*Fin seccion pie de pagina*/
+
+/*Inicio LiGHT Mode :3*/
+body.lightmode{
+    background-color: #f3dafac2;
+}
+body.lightmode .titulo2{
+    color: #070007;
+}
+body.lightmode h3{
+    color: #070007;
+}
+body.lightmode h4{
+    color: #070007;
+}
+body.lightmode a{
+    color: #070007;
+}
+body.lightmode a:hover{
+    color: #f8dffa;
+}
+body.lightmode p{
+    color: #130014ce;
+}
+body.lightmode header{
+    background-color: #e5c3ec;
+}
+body.lightmode li a.active, li a:hover{
+    background-color: #ad74b3;
+}
+body.lightmode .submenu{
+    background-color: #d2b4d4;
+}
+body.lightmode .card1:hover{
+    background-color: #b388b8af;
+}
+body.lightmode footer{
+    background-color:#a384aa3d
+}
+body.lightmode .pie_de_pagina .grupo-1 .box h2{
+    color: #130014;
+}
+body.lightmode .pie_de_pagina .grupo-1 .box p{
+    color: #30002c;
+}
+body.lightmode .pie_de_pagina .grupo-1 .box .red-social a{
+    color: #201124;
+    background-color: #cb85ddb4;
+}
+body.lightmode .pie_de_pagina .grupo-1 .box .red-social a:hover{
+    color: #f8dffa;
+}
+body.lightmode .pie_de_pagina .grupo-2{
+    background-color: #c771ddb4;
+}
+body.lightmode .pie_de_pagina .grupo-2 small{
+    color: #070007;
+}
+
+/*Fin sección LIGHT Mode*/
 
 
 /*Responsive*/
@@ -319,7 +439,7 @@ a:hover{
         left: 0px;
         width: 100%;
         height: 100vh;
-        background:rgb(107, 55, 150);
+        background:rgb(183, 142, 216);
         text-align: center;
         flex-direction: column;
         display: none;
@@ -335,17 +455,34 @@ a:hover{
         font-size: 20px;
     }
     .submenu{
-        background-color:rgb(100, 20, 150);
+        background-color:rgb(160, 112, 190);
         width: 80%;
-        height: 100%;
+        height: 38%;
         left: 10%;
+        overflow: hidden;
     }
     .submenu li{
         justify-content: right;
     }
     .submenu li a{
-        padding: 10px;
         font-size: 15px;
+    }
+    .switch{
+        width: 100px; 
+        height: 36px;
+        z-index: -1;
+    }
+    body.lightmode .menu{
+        background-color: #e2b3e9;
+    }
+    .slider:before {
+        height: 28px;
+        width: 28px;
+    }
+    input:checked + .slider:before {
+        -webkit-transform: translateX(60px);
+        -ms-transform: translateX(60px);
+        transform: translateX(60px);
     }
     .pie_de_pagina .grupo-1{
         width: 100%;
