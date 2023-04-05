@@ -459,7 +459,6 @@ body.lightmode .pie_de_pagina .grupo-2 small{
         width: 80%;
         height: 38%;
         left: 10%;
-        overflow: hidden;
     }
     .submenu li{
         justify-content: right;
@@ -467,10 +466,12 @@ body.lightmode .pie_de_pagina .grupo-2 small{
     .submenu li a{
         font-size: 15px;
     }
+    .menu li:hover .submenu{
+        z-index: 2;
+    }
     .switch{
         width: 100px; 
         height: 36px;
-        z-index: -1;
     }
     body.lightmode .menu{
         background-color: #e2b3e9;
