@@ -92,7 +92,7 @@ li a.active, li a:hover{
     transition: all .3s;
 }
 
-/*submenu*/
+/*Submenu*/
 .submenu ul{
     margin-top: -1em;
 }
@@ -123,6 +123,7 @@ li a.active, li a:hover{
     visibility: visible;
     opacity: 1;
 }
+/*Fin sección submenu*/
 
 /*Inicio sección boton de modo oscuro/claro */
 .button-switch{
