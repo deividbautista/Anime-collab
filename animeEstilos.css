@@ -187,6 +187,7 @@ input:checked + .slider:before {
 }
 /*Fin sección boton de modo oscuro/claro */
 
+/*Inicio párrafos/textos principales */
 p{
     text-align:justify;
     font-size: 30px;
