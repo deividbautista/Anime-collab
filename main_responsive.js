@@ -3,7 +3,6 @@ const menu = document.querySelector('.menu')
 const checkbtn = document.querySelector('.checkbtn')
 const lightmode = document.querySelector ('#switch-mode')
 const body = document.querySelector('body')
-load();
 
 
 check.addEventListener('click', () =>{
@@ -13,19 +12,23 @@ check.addEventListener('click', () =>{
 
 lightmode.addEventListener('click', e =>{
     body.classList.toggle('lightmode');
-    store(body.classList.contains('lightmode'));
-})
+    lightmode.classList.toggle('active');
 
-function load(){
-    const lightmode = localStorage.getItem('lightmode')
-    if (!lightmode){
-        store('flase');
-    }else if (lightmode== 'true'){
-        body.classList.add('lightmode');
-    }
-}
-function store(value){
-    localStorage.setItem('lightmode', value);
+    // Guardamos el modo en localstorage.
+	if(body.classList.contains('lightmode')){
+		localStorage.setItem('light-mode', 'true');
+	} else {
+		localStorage.setItem('light-mode', 'false');
+	}
+});
+
+// Obtenemos el modo actual.
+if(localStorage.getItem('light-mode') === 'true'){
+	body.classList.add('lightmode');
+    lightmode.classList.remove('active');
+} else {
+	body.classList.remove('lightmode');
+    lightmode.classList.add('active');
 }
 
 
