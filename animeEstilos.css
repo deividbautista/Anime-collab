@@ -429,6 +429,7 @@ body.lightmode .pie_de_pagina .grupo-2 small{
         flex-direction: column;
         display: none;
         opacity: 0;
+        align-items: center;
     }
     .menu li{
         float: none;
