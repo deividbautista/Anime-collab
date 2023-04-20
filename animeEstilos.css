@@ -46,6 +46,72 @@ header{
 }
 /**Fin apartado de cabeceras**/
 
+/**Inicio section slider**/
+.slider-anime{
+    padding: 0px 0;
+}
+.containerS{
+    width: 90%;
+    min-height: 55vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 30px;
+}
+.slider-container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: 1em;
+}
+.slider-body{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    background-color: #31113181;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
+    border-radius: 5px;
+}
+.slider-body--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+.slider-text{
+    max-width: 600px;
+}
+.subtitle{
+    color: white;
+    padding-left: 0.3em;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+.slider-review{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.7;
+}
+.slider-img{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+#slider-arrow{
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+#slider-arrow:nth-of-type(2){
+    justify-self: end;
+}
+
+
 /**Titulos principales**/
 .titulo{
     padding-top: 110px;
@@ -362,6 +428,15 @@ body.lightmode .pie_de_pagina .grupo-2{
 body.lightmode .pie_de_pagina .grupo-2 small{
     color: #070007;
 }
+body.lightmode .slider-body{
+    background-color: #dfc6e4;
+}
+body.lightmode .subtitle{
+    color: #130014ce;
+}
+body.lightmode #slider-arrow{
+    color: #130014ce;
+}
 
 /*Fin sección LIGHT Mode*/
 
@@ -485,6 +560,38 @@ body.lightmode .pie_de_pagina .grupo-2 small{
         max-width: 84%;
         font-size: 15px;
     }
+    .slider-container{
+        grid-template-columns: 25px 1fr 25px;
+    }
+    .slider-body{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+    }
+    .slider_picture{
+        grid-row: 1/2;
+    }
+    .slider-img{
+        width: 180px;
+        height: 180px;
+    }
+    #slider-arrow{
+        width: 100%;
+        font-size: 18px;
+    }
+    .containerS{
+        overflow: visible;
+        min-height: 100vh;
+    }
+    .subtitle{
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    .slider-review{
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-right: 0.7em;
+    }
+
 }
 
 /*Animaciones*/
