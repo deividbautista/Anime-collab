@@ -102,12 +102,12 @@ header{
     display: block;
     margin: 0 auto;
 }
-#slider-arrow{
+#slider-arrow1, #slider-arrow2{
     color: white;
     cursor: pointer;
     font-size: 20px;
 }
-#slider-arrow:nth-of-type(2){
+#slider-arrow2{
     justify-self: end;
 }
 
@@ -434,7 +434,7 @@ body.lightmode .slider-body{
 body.lightmode .subtitle{
     color: #130014ce;
 }
-body.lightmode #slider-arrow{
+body.lightmode #slider-arrow1, #slider-arrow2{
     color: #130014ce;
 }
 
@@ -574,7 +574,7 @@ body.lightmode #slider-arrow{
         width: 180px;
         height: 180px;
     }
-    #slider-arrow{
+    #slider-arrow1, #slider-arrow2{
         width: 100%;
         font-size: 18px;
     }
