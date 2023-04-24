@@ -1,3 +1,4 @@
+//definir constantes principales
 const check = document.querySelector('.check')
 const menu = document.querySelector('.menu')
 const checkbtn = document.querySelector('.checkbtn')
