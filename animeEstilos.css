@@ -20,7 +20,7 @@ body{
 }
 /*Fin estructura principal*/
 
-/**Apartado de cabeceras**/
+/*Apartado de cabeceras*/
 .cabecera{
     background-image: url(https://media.giphy.com/media/6705G9I9sUcNCaJF10/giphy.gif);
     background-size: cover;
@@ -44,9 +44,9 @@ header{
     z-index: 100;
     opacity: 98%;
 }
-/**Fin apartado de cabeceras**/
+/*Fin apartado de cabeceras*/
 
-/**Inicio section slider**/
+/*Inicio section slider*/
 .slider-anime{
     padding: 0px 0;
 }
@@ -113,7 +113,7 @@ header{
 /*Fin sección de enlace*/
 
 
-/**Titulos principales**/
+/*Titulos principales*/
 .titulo{
     padding-top: 110px;
     padding-left: 0.7em;
@@ -126,7 +126,7 @@ header{
     color: antiquewhite;
 }
 
-/**Fin titulos principales**/
+/*Fin titulos principales*/
 
 /*Menú principal*/
 .navegacion{
