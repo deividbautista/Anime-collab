@@ -7,7 +7,7 @@ const body = document.querySelector('body')
 
 check.addEventListener('click', () =>{
     menu.classList.toggle('activado');
-    checkbtn.classList.toggle('ñe');
+    checkbtn.classList.toggle('press');
 })
 
 lightmode.addEventListener('click', e =>{

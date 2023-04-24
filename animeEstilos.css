@@ -18,9 +18,8 @@ body{
     width: 200px;
     height: 200px;
 }
-.hrP2{
-    max-width: 76.5%;
-}
+/*Fin estructura principal*/
+
 /**Apartado de cabeceras**/
 .cabecera{
     background-image: url(https://media.giphy.com/media/6705G9I9sUcNCaJF10/giphy.gif);
@@ -37,6 +36,7 @@ body{
     border-color: #ffffff;
     border-style: solid;
 }
+
 header{
     background-color: #070007;
     width: 100%;
@@ -110,6 +110,7 @@ header{
 #slider-arrow2{
     justify-self: end;
 }
+/*Fin sección de enlace*/
 
 
 /**Titulos principales**/
@@ -124,7 +125,10 @@ header{
     font-size: 7;
     color: antiquewhite;
 }
+
 /**Fin titulos principales**/
+
+/*Menú principal*/
 .navegacion{
     width: 100%;
     margin: 30px auto;
@@ -157,6 +161,7 @@ li a.active, li a:hover{
     background-color: rgb(60, 14, 87) ;
     transition: all .3s;
 }
+/*Fin menú principal*/
 
 /*submenu*/
 .submenu ul{
@@ -189,6 +194,22 @@ li a.active, li a:hover{
     visibility: visible;
     opacity: 1;
 }
+/*Boton resposive menú*/
+.checkbtn{
+    font-size: 30px;
+    position: absolute;
+    top: 0.6em;
+    right: 0.8em;
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+#check{
+    display:none;
+}
+/*Fin boton resposive menú*/
+/*FIn submenu*/
+
 
 /*Inicio sección boton de modo oscuro/claro */
 .button-switch{
@@ -237,14 +258,14 @@ li a.active, li a:hover{
 }
 /*Fin sección boton de modo oscuro/claro */
 
+/*Sección textos*/
 p{
     text-align:justify;
     font-size: 30px;
     color:  rgb(255, 255, 255);
     padding-left: 0.7em;
-    max-width: 75%;
+    max-width: 95%;
 }
-
 .contenido{
     width: 100%;
 }
@@ -253,7 +274,22 @@ h3{
     font-size: 30px;
     padding-left: 0.5em;
 }
+h4{
+    font-size: 30px;
+    color: antiquewhite;
+}
+a{
+    font-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: antiquewhite;
+}
+a:hover{
+    color: #30002c;
+}
+/*Fin textos*/
 
+/*Inicio Cards*/
 .contenedorA{
     width: 100%;
     max-width: 100%;
@@ -269,9 +305,6 @@ h3{
     margin: 20px;
     text-align: center;
     transition: 0.25s;
-}
-#check{
-    display:none;
 }
 .card1:hover{
     transform: translateY(-15px);
@@ -289,28 +322,8 @@ h3{
     font-size: 20px;
     max-width: 90%;
 }
-h4{
-    font-size: 30px;
-    color: antiquewhite;
-}
-a{
-    font-style: none;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: antiquewhite;
-}
-a:hover{
-    color: #30002c;
-}
-.checkbtn{
-    font-size: 30px;
-    position: absolute;
-    top: 0.6em;
-    right: 0.8em;
-    display: none;
-    color: white;
-    cursor: pointer;
-}
+/*Fin cards*/
+
 
 /*Pie de pagina...*/
 .pie_de_pagina{
@@ -372,12 +385,13 @@ a:hover{
 
 /*Fin seccion pie de pagina*/
 
+
 /*Inicio LiGHT Mode :3*/
 body.lightmode{
     background-color: #f3dafac2;
 }
 body.lightmode .titulo2{
-    color: #070007;
+    color: #1f011f;
 }
 body.lightmode h3{
     color: #070007;
@@ -434,10 +448,12 @@ body.lightmode .slider-body{
 body.lightmode .subtitle{
     color: #130014ce;
 }
-body.lightmode #slider-arrow1, #slider-arrow2{
+body.lightmode #slider-arrow1{
     color: #130014ce;
 }
-
+body.lightmode #slider-arrow2{
+    color: #130014ce;
+}
 /*Fin sección LIGHT Mode*/
 
 
@@ -593,13 +609,14 @@ body.lightmode #slider-arrow1, #slider-arrow2{
     }
 
 }
+/*Fin resposive*/
 
 /*Animaciones*/
 @keyframes mostrarMenu{
     from{opacity:0;}
     to{opacity:1;}
 }
-.checkbtn.ñe{
+.checkbtn.press{
     color: rgb(107, 55, 150);
 }
 .menu.activado{
