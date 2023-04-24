@@ -32,6 +32,7 @@ if(localStorage.getItem('light-mode') === 'true'){
     lightmode.classList.add('active');
 }
 
+//funcion de slider principal 
 (function(){
     const slider = [...document.querySelectorAll('.slider-body')];
     const arrowbefore = document.querySelector('#slider-arrow1');
