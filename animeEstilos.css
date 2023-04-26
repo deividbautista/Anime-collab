@@ -20,6 +20,63 @@ body{
 }
 /*Fin estructura principal*/
 
+
+/*Titulos principales*/
+.titulo{
+    padding-top: 110px;
+    padding-left: 0.7em;
+    font-size: 7;
+    color: antiquewhite;
+}
+.titulo2{
+    padding-left: 4.4em;
+    font-size: 7;
+    color: antiquewhite;
+}
+.titulo3{
+    padding-left: 1em;
+    font-size: 7;
+    color: antiquewhite;
+}
+/*Fin titulos principales*/
+
+
+/*Sección textos*/
+p{
+    text-align:justify;
+    font-size: 30px;
+    color:  rgb(255, 255, 255);
+    padding-left: 4.67em;
+    max-width: 79%;
+}
+.contenido{
+    width: 100%;
+}
+.hr1{
+    margin: auto;
+    max-width: 79%;
+}
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding-left: 0.5em;
+}
+h4{
+    font-size: 30px;
+    color: antiquewhite;
+}
+a{
+    font-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: antiquewhite;
+}
+a:hover{
+    color: #30002c;
+}
+/*Fin textos*/
+
+
 /*Apartado de cabeceras*/
 .cabecera{
     background-image: url(https://media.giphy.com/media/6705G9I9sUcNCaJF10/giphy.gif);
@@ -28,13 +85,9 @@ body{
     height: 700px;
 }
 .cabecera2{
-    background-image: url(https://a-static.besthdwallpaper.com/mountain-scenery-art-wallpaper-3000x2000-81095_42.jpg);
-    background-size: cover;
-    width: 100%;
+    width: 79%;
     height: 100%;
-    border-bottom: 7px;
-    border-color: #ffffff;
-    border-style: solid;
+    margin: auto;
 }
 
 header{
@@ -45,6 +98,7 @@ header{
     opacity: 98%;
 }
 /*Fin apartado de cabeceras*/
+
 
 /*Inicio section slider*/
 .slider-anime{
@@ -93,6 +147,7 @@ header{
     font-weight: 300;
     font-size: 20px;
     line-height: 1.7;
+    padding-left: 0.7em;
 }
 .slider-img{
     width: 210px;
@@ -101,6 +156,7 @@ header{
     object-fit: cover;
     display: block;
     margin: 0 auto;
+    padding-top: 1px;
 }
 #slider-arrow1, #slider-arrow2{
     color: white;
@@ -110,23 +166,8 @@ header{
 #slider-arrow2{
     justify-self: end;
 }
-/*Fin sección de enlace*/
+/*Fin sección slider*/
 
-
-/*Titulos principales*/
-.titulo{
-    padding-top: 110px;
-    padding-left: 0.7em;
-    font-size: 7;
-    color: antiquewhite;
-}
-.titulo2{
-    padding-left: 0.7em;
-    font-size: 7;
-    color: antiquewhite;
-}
-
-/*Fin titulos principales*/
 
 /*Menú principal*/
 .navegacion{
@@ -258,36 +299,6 @@ li a.active, li a:hover{
 }
 /*Fin sección boton de modo oscuro/claro */
 
-/*Sección textos*/
-p{
-    text-align:justify;
-    font-size: 30px;
-    color:  rgb(255, 255, 255);
-    padding-left: 0.7em;
-    max-width: 95%;
-}
-.contenido{
-    width: 100%;
-}
-h3{
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    padding-left: 0.5em;
-}
-h4{
-    font-size: 30px;
-    color: antiquewhite;
-}
-a{
-    font-style: none;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: antiquewhite;
-}
-a:hover{
-    color: #30002c;
-}
-/*Fin textos*/
 
 /*Inicio Cards*/
 .contenedorA{
@@ -302,7 +313,7 @@ a:hover{
     border-radius: 9px;
     box-shadow: 0 2px, 2px rgb(0, 0, 0);
     overflow: hidden;
-    margin: 20px;
+    margin: 32px;
     text-align: center;
     transition: 0.25s;
 }
@@ -320,7 +331,9 @@ a:hover{
     color: #ffffff;
     text-align: center;
     font-size: 20px;
-    max-width: 90%;
+    max-width: 95%;
+    padding-left: 0.5rem;
+    text-align:justify;
 }
 /*Fin cards*/
 
@@ -391,6 +404,9 @@ body.lightmode{
     background-color: #f3dafac2;
 }
 body.lightmode .titulo2{
+    color: #1f011f;
+}
+body.lightmode .titulo3{
     color: #1f011f;
 }
 body.lightmode h3{
@@ -492,9 +508,13 @@ body.lightmode #slider-arrow2{
     h4{
         font-size: 19px;
     }
+    .titulo2{
+        padding-left: 1.2em;
+    }
     p{
+        padding-left: 2.65em;
         font-size: 15px;
-        max-width: 95%;
+        max-width: 84%;
 
     }
     .logo{
