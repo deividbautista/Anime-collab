@@ -29,12 +29,11 @@ body{
     color: antiquewhite;
 }
 .titulo2{
-    padding-left: 4.4em;
     font-size: 7;
     color: antiquewhite;
 }
 .titulo3{
-    padding-left: 1em;
+    margin-left: 1em;
     font-size: 7;
     color: antiquewhite;
 }
@@ -46,21 +45,14 @@ p{
     text-align:justify;
     font-size: 30px;
     color:  rgb(255, 255, 255);
-    padding-left: 4.67em;
-    max-width: 79%;
+
 }
 .contenido{
-    width: 100%;
-}
-.hr1{
+    width: 79%;
     margin: auto;
-    max-width: 79%;
+
 }
-h3{
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    padding-left: 0.5em;
-}
+
 h4{
     font-size: 30px;
     color: antiquewhite;
@@ -484,11 +476,15 @@ body.lightmode #slider-arrow2{
     .hrP2{
         max-width: 100%;
     }
+    .titulo3{
+        margin-left: 0.4em;
+    }
     .cabecera2{
-        width: 100%;
+        width: 75%;
+        margin: auto;
     }
     .contenido{
-        width: 95%;
+        width: 75%;
     }
     .video_index{
         width: 100%;
@@ -500,22 +496,19 @@ body.lightmode #slider-arrow2{
     .card1{
         width: 410px;
         height: 410px;
+        margin: 15px;
+
     }
     .pCard{
         text-align:justify;
         max-width: 90%;
     }
     h4{
+        margin-left: 0px;
         font-size: 19px;
     }
-    .titulo2{
-        padding-left: 1.2em;
-    }
     p{
-        padding-left: 2.65em;
         font-size: 15px;
-        max-width: 84%;
-
     }
     .logo{
         padding-top: 15px;
