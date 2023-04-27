@@ -30,12 +30,12 @@ body{
 }
 .titulo2{
     font-size: 7;
-    color: rgb(243, 215, 250);
+    color: rgb(225, 198, 231);
 }
 .titulo3{
     margin-left: 1em;
     font-size: 7;
-    color: rgb(237, 215, 250);
+    color: rgb(218, 198, 230);
 }
 /*Fin titulos principales*/
 
@@ -55,7 +55,7 @@ p{
 
 h4{
     font-size: 30px;
-    color: antiquewhite;
+    color: rgb(230, 200, 233);
 }
 a{
     font-style: none;
