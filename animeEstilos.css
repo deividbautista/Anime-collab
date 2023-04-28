@@ -443,7 +443,7 @@ body.lightmode li a.active, li a:hover{
     background-color: #ad74b3;
 }
 body.lightmode .submenu{
-    background-color: #d2b4d4;
+    background-color: #eabeec;
 }
 body.lightmode .card1:hover{
     background-color: #b388b8af;
@@ -609,6 +609,7 @@ body.lightmode #slider-arrow2{
     }
     .pie_de_pagina .grupo-1 .box figure img{
         width: 250px;
+        
     }
     .pie_de_pagina .grupo-1 p{
         max-width: 84%;
