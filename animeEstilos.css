@@ -65,7 +65,7 @@ p{
 
 h4{
     font-size: 30px;
-    color: rgb(230, 200, 233);
+    color: rgb(244, 213, 247);
 }
 a{
     font-style: none;
@@ -90,6 +90,8 @@ a:hover{
     width: 79%;
     height: 100%;
     margin: auto;
+    background-color: #160d16;
+    border-radius: 2px;
 }
 
 header{
@@ -337,6 +339,9 @@ li a.active, li a:hover{
     padding-left: 0.5rem;
     text-align:justify;
 }
+.card1 a:hover{
+    color: #723b6c;
+}
 /*Fin cards*/
 
 
@@ -463,6 +468,9 @@ body.lightmode .pie_de_pagina .grupo-2 small{
 body.lightmode .slider-body{
     background-color: #dfc6e4;
 }
+body.lightmode .cabecera2{
+    background-color: #edd5f1;
+}
 body.lightmode .subtitle{
     color: #130014ce;
 }
@@ -487,11 +495,7 @@ body.lightmode #slider-arrow2{
         max-width: 100%;
     }
     .titulo3{
-        margin-left: 0.4em;
-    }
-    .cabecera2{
-        width: 75%;
-        margin: auto;
+        margin-left: 0.45em;
     }
     .contenido{
         width: 75%;
@@ -503,9 +507,17 @@ body.lightmode #slider-arrow2{
     .contenedorA{
         max-width: 100%;
     }
+    .cabecera2{
+        max-width: 75%;
+        background-color: transparent;
+        margin: auto;
+    }
+    body.lightmode .cabecera2{
+        background-color: transparent;
+    }
     .card1{
+        height: fit-content;
         margin: 15px;
-
     }
     .pCard{
         text-align:justify;
