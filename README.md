@@ -6,5 +6,5 @@ The project consists of a social network, focused on the population niche that e
 
 <hr/>
  <a href="https://deividbautista.github.io/Anime-collab/index.html">
-    <img src="https://github.com/deividbautista/Anime-collab/blob/main/imagenes/landing_page.png" width="750px"/>
+    <img src="https://github.com/deividbautista/Anime-collab/blob/main/imagenes/landing_page.png" width="800px"/>
  </a>
