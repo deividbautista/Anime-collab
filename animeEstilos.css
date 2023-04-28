@@ -65,13 +65,13 @@ p{
 
 h4{
     font-size: 30px;
-    color: rgb(244, 213, 247);
+    color: rgb(245, 226, 247);
 }
 a{
     font-style: none;
     text-decoration: none;
     text-transform: uppercase;
-    color: antiquewhite;
+    color: rgb(253, 227, 250);
 }
 a:hover{
     color: #30002c;
