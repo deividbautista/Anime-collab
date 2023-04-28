@@ -339,8 +339,13 @@ li a.active, li a:hover{
     padding-left: 0.5rem;
     text-align:justify;
 }
+.card1 a{
+    display: block;
+    margin-bottom: 2em;
+}
 .card1 a:hover{
     color: #723b6c;
+    transform: scale(1.2);
 }
 /*Fin cards*/
 
