@@ -68,13 +68,15 @@ h4{
     color: rgb(230, 200, 233);
 }
 a{
-    font-style: none;
+    margin-bottom: 2em;
+    display: block;
     text-decoration: none;
     text-transform: uppercase;
     color: antiquewhite;
 }
 a:hover{
-    color: #30002c;
+    color: #53004c;
+    transform: scale(1.2);
 }
 /*Fin textos*/
 
