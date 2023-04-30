@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anime</title>
-  <link rel="stylesheet" href="animeEstilos.css">
+  <link rel="stylesheet" href="views/assets/css/animeEstilos.css">
+  <link rel="stylesheet" href="views/assets/css/login.css.css">
   <title>MUNDO オタク</title>
-  <script src="https://kit.fontawesome.com/9c61ead5a6.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="darkmode" id="darkmode">
@@ -17,7 +17,7 @@
   -->
   <header>
     <nav class="navegacion">
-      <a href="anime.html" class="enlace">
+      <a href="index.html" class="enlace">
         <img class="logo" src="imagenes/logo_transparent.png" alt="">
       </a>
     </nav>
@@ -32,8 +32,8 @@
         <li><a href="#">Foros</a></li>
         <li><a href="#"><i class="fa-regular fa-user"></i></a>
           <ul class="submenu">
-            <li><a href="#">Iniciar sesión</a></li>
-            <li><a href="#">Registrarse</a></li>
+            <li><a href="index.html#cabecera">Iniciar sesión</a></li>
+            <li><a href="index.html#cabecera">Registrarse</a></li>
           </ul>
         </li>
         <li class=" button-switch">
@@ -60,6 +60,83 @@
     <H1 class="titulo">
       MUNDO オタク
     </H1>
+    <div class="container">
+      <div class="item">
+        <a href="index.html">
+          <img class="logologin" src="imagenes/logo_transparent.png" alt="">
+        </a>
+          <div class="text-item">
+              <h2>¡Bien venidos! <br>
+                  <p  class="plogo">A nuestra pagina web :3</p> 
+                  <p  class="plogo">Ingresa a nuestra platamora MUNDO オタク, para hcer nuevos amigos, platicar 
+                    en foros interesantes y compartir este hobbie y pasión por la cultura japonesas.</p>
+              </h2>
+              <div class="social-icon">
+                  <a href="#" class='fa-brands fa-facebook'></a>
+                  <a href="#" class='fa-brands fa-instagram'></a>
+                  <a href="#" class='fa-brands fa-twitter'></a>
+                  <a href="https://github.com/deividbautista/Anime-collab" class='fa-brands fa-github'></a>
+              </div>
+          </div>
+      </div>
+      <div class="login-section">
+          <div class="form-box login">
+              <form action="">
+                  <h2>INICIAR SESIÓN</h2>
+                  <div class="input-box">
+                      <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                      <input class="input_login-register" type="email" required>
+                      <label >Nombre de usuario</label>
+                  </div>
+                  <div class="input-box">
+                      <span class="icon"><i class="fa-regular fa-eye"></i></span>
+                      <input class="input_login-register"  type="password" required>
+                      <label>Contraseña</label>
+                  </div>
+                  <div class="remember-password">
+                      <label for=""><input type="checkbox">Recuerdame</label>
+                      <a class="aRemember" href="#">Recuperar contraseña</a>
+                  </div>
+                  <button class="btn">Ingresar</button>
+                  <div class="create-account">
+                      <p class="plogin">¿No tienes cuenta? <a href="#" class="register-link">Registrate</a></p>
+                  </div>
+              </form>
+          </div>
+          <div class="form-box register">
+              <form action="">
+                  <h2>RESGRISTRO</h2>
+                  <div class="input-box">
+                      <span class="icon"><i class="fa-regular fa-user"></i></span>
+                      <input class="input_login-register" type="text" required>
+                      <label >Nombre de usuario</label>
+                  </div>
+                  <div class="input-box">
+                      <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                      <input class="input_login-register" type="email" required>
+                      <label >Correo</label>
+                  </div>
+                  <div class="input-box">
+                      <span class="icon"><i class='fa-regular fa-eye' ></i></span>
+                      <input class="input_login-register" type="password" required>
+                      <label>Contraseña</label>
+                  </div>
+                  <div class="input-box">
+                    <span class="icon"><i class='fa-regular fa-eye' ></i></span>
+                    <input class="input_login-register" type="password" required>
+                    <label>Confimar Contraseña</label>
+                </div>
+                  <div class="remember-password">
+                      <label for=""><input type="checkbox">Aceptar terminos y condiciones</label>
+                  </div>
+                  <button class="btn">Registrar</button>
+                  <div class="create-account">
+                      <p class="plogin">¿Ya estás listo? <a href="#" class="login-link">Iniciar sesión</a></p>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
   </div>
   <hr class="hrP">
   <br>
@@ -70,7 +147,7 @@
   <!--
     Inicio apartado slider
   !-->
-  <section class="slider-anime">
+  <section class="slider-anime" id="slider-anime">
     <div class="slider-container containerS">
       <i id="slider-arrow1" class="fa-solid fa-arrow-left"></i>
       <section class="slider-body slider-body--show" data-id="1">
@@ -308,6 +385,7 @@
 <!--
   Apartado para enlazar archivo java script
 -->
-<script src="main_functionalities.js"></script>
+<script src="views/assets/js/main_functionalities.js"></script>
+<script src="https://kit.fontawesome.com/9c61ead5a6.js" crossorigin="anonymous"></script>
 
 </html>
