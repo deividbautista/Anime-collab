@@ -209,6 +209,9 @@
     transition: .5s ease;
 
 }
+#icon-eye, #icon-eyer, #icon-eyer2{
+    cursor: pointer;
+}
 .input-box .icon{
     position: absolute;
     top: 13px;
