@@ -647,11 +647,11 @@ body.lightmode #slider-arrow2{
         margin-right: 0.7em;
     }
     .titulo{
-        padding-top: 100px;
+        padding-top: 90px;
         padding-left: 0em;
         text-align: center;
         font-size: 7;
-        color: antiquewhite;
+        color: rgb(255, 255, 255);
     }
 }
 /*Fin resposive*/
