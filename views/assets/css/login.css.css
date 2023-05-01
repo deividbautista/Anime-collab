@@ -141,7 +141,7 @@
     width: 100%;
     height: 50px;
     border-bottom: 2px solid#fff;
-    margin: 30px 0;
+    margin: 15px 0;
     position: relative;
 }
 
@@ -254,9 +254,6 @@
 }
 
 @media (max-width:825px){
-    .container{
-        height: 700px;
-    }
     .item{
         opacity: 0;
     }
