@@ -10,7 +10,6 @@
     height: 550px;
     margin-top: 20px;
     background-position: center;
-    background-size: cover;
     border-radius: 20px;
     overflow: hidden;
 
@@ -252,4 +251,21 @@
 
 .create-account p a:hover {
     text-decoration: underline;
+}
+
+@media (max-width:825px){
+    .container{
+        height: 700px;
+    }
+    .item{
+        opacity: 0;
+    }
+    .container .login-section {
+        position: relative;
+        margin:40px auto;
+    }
+    .login-section .form-box {
+        width: 100%;
+    }
+
 }
