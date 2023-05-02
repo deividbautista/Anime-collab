@@ -257,6 +257,10 @@
     .item{
         opacity: 0;
     }
+    .container{
+        height: 530px;
+        margin-top: 30px;
+    }
     .container .login-section {
         position: relative;
         margin:40px auto;
@@ -266,6 +270,15 @@
     }
     .form-box .input-box {
         margin: 15px 0;
+    }
+    .login-section .form-box h2 {
+        margin-top: -60px;
+    }
+    .input-box label {
+        font-size: 14px;
+        font-weight: 600px;
+        color: #fff;
+    
     }
 
 }
