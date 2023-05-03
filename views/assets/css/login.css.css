@@ -278,7 +278,12 @@
         font-size: 14px;
         font-weight: 600px;
         color: #fff;
-    
+    }
+    .input-box .icon {
+        position: absolute;
+        top: 17px;
+        right: 1px;
+        font-size: 14px;
     }
 
 }
