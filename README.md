@@ -10,5 +10,5 @@ Link to landing page
 <h1/>
 
  <a href="https://deividbautista.github.io/Anime-collab/index.html">
-    <img src="https://github.com/deividbautista/Anime-collab/blob/main/views/assets/imagenes/landing_page.png" width="830px"/>
+    <img src="https://github.com/deividbautista/Anime-collab/blob/main/views/assets/imagenes/landing_page.png" width="850px"/>
  </a>
