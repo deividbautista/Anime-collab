@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime</title>
+  <!--
+    Sección de links de estilos principales
+  -->
+  <link rel="stylesheet" href="views/assets/css/animeEstilos.css">
+  <link rel="stylesheet" href="views/assets/css/login.css.css">
+  <title>MUNDO オタク</title>
+</head>
+
+<body class="darkmode" id="darkmode">
+  <!--
+  Inicio Apartado de menú responsive
+  -->
+  <header>
+    <nav class="navegacion">
+      <a href="index.html" class="enlace">
+        <img class="logo" src="views/assets/imagenes/Img_marca/logo_transparent.png" alt="">
+      </a>
+    </nav>
+    <nav class="navmenu">
+      <input type="checkbox" id="check" class="check">
+      <label for="check" class="checkbtn" id="checkicon">
+        <i id="icon" class="fa-solid fa-bars"></i>
+      </label>
+      <ul class="menu">
+        <li><a href="#cabecera">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Foros</a></li>
+        <li><a href="#"><i class="fa-regular fa-user"></i></a>
+          <ul class="submenu">
+            <li><a href="index.html#cabecera">Iniciar sesión</a></li>
+            <li><a href="index.html#cabecera">Registrarse</a></li>
+          </ul>
+        </li>
+        <li class=" button-switch">
+          <label class="switch">
+            <button type="checkbox" class="switchLight active" id="switch-mode">
+              <span><i class="fa-regular fa-sun"></i></span>
+              <span><i class="fa-solid fa-moon"></i></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+    <br>
+    <br>
+    <hr>
+  </header>
+  <!--
+  Fin apartado menú
+  -->
+
+  <!--
+  Inicio Apartado de cabecera
+  -->
+  <div class="cabecera" id="cabecera">
+    <div class="container">
+      <div class="item">
+        <a href="index.html">
+          <img class="logologin" src="views/assets/imagenes/Img_marca/logo_transparent.png" alt="">
+        </a>
+        <div class="text-item">
+          <h2>¡Bien venidos! <br>
+            <p class="plogo">A nuestra pagina web :3</p>
+            <p class="plogo">Ingresa a nuestra platamora MUNDO オタク, para hcer nuevos amigos, platicar
+              en foros interesantes y compartir este hobbie y pasión por la cultura japonesas.</p>
+          </h2>
+          <div class="social-icon">
+            <a href="#" id="social-icona" class='fa-brands fa-facebook'></a>
+            <a href="#" id="social-icona"class='fa-brands fa-instagram'></a>
+            <a href="#" id="social-icona"class='fa-brands fa-twitter'></a>
+            <a href="https://github.com/deividbautista/Anime-collab" id="social-icona"class='fa-brands fa-github'></a>
+          </div>
+        </div>
+      </div>
+      <div class="login-section">
+        <div class="form-box login">
+          <form action="">
+            <h2>INICIAR SESIÓN</h2>
+            <div class="input-box">
+              <span  class="icon"><i class="fa-regular fa-user"></i></span>
+              <input class="input_login-register" type="text" required>
+              <label>Nombre de usuario</label>
+            </div>
+            <div class="input-box">
+              <span class="icon" id="icon-eye"><i id="eye" class="fa-regular fa-eye-slash"></i></span>
+              <input class="input_login-register" id="password" type="password" required>
+              <label>Contraseña</label>
+            </div>
+            <div class="remember-password">
+              <label for=""><input type="checkbox">Recuerdame</label>
+              <a class="aRemember" href="#">Recuperar contraseña</a>
+            </div>
+            <button class="btn">Ingresar</button>
+            <div class="create-account">
+              <p class="plogin">¿No tienes cuenta? <a href="#" class="register-link">Registrate</a></p>
+            </div>
+          </form>
+        </div>
+        <div class="form-box register">
+          <form action="">
+            <h2>RESGISTRO</h2>
+            <div class="input-box">
+              <span  class="icon"><i class="fa-regular fa-user"></i></span>
+              <input class="input_login-register" type="text" required>
+              <label>Nombre de usuario</label>
+            </div>
+            <div class="input-box">
+              <span  class="icon"><i class="fa-regular fa-envelope"></i></span>
+              <input class="input_login-register" type="text" required>
+              <label>Correo electronico</label>
+            </div>
+            <div class="input-box">
+              <span class="icon" id="icon-eyer"><i id="eyer" class="fa-regular fa-eye-slash"></i></span>
+              <input class="input_login-register" id="passwordr" type="password" required>
+              <label>Contraseña</label>
+            </div>
+            <div class="input-box">
+              <span class="icon" id="icon-eyer2"><i id="eyer2" class="fa-regular fa-eye-slash"></i></span>
+              <input class="input_login-register" id="passwordr2" type="password" required>
+              <label>Contraseña</label>
+            </div>
+            <div class="remember-password">
+              <label for=""><input type="checkbox">Aceptar terminos y condiciones</label>
+            </div>
+            <button class="btn">Registrar</button>
+            <div class="create-account">
+              <p class="plogin">¿Ya estás listo? <a href="#" class="login-link">Iniciar sesión</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="hrP">
+  <br>
+  <!--
+  Fin Apartado cabecera
+  -->
+
+  <!--
+    Inicio apartado slider
+  !-->
+  <section class="slider-anime" id="slider-anime">
+    <div class="slider-container containerS">
+      <i id="slider-arrow1" class="fa-solid fa-arrow-left"></i>
+      <section class="slider-body slider-body--show" data-id="1">
+        <div class="slider-text">
+          <h2 class="subtitle">HOLA SOY UNA CHICA ANIME CUALQUIERA</h2>
+          <p class="slider-review">Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Architecto quibusdam labore assumenda mollitia repudiandae eos!
+          </p>
+        </div>
+
+        <figure class="slider_picture">
+          <img src="https://1fid.com/wp-content/uploads/2022/07/girl-anime-wallaper-51.jpg" alt="" class="slider-img">
+        </figure>
+      </section>
+
+      <section class="slider-body" data-id="2">
+        <div class="slider-text">
+          <h2 class="subtitle">HOLA MI NOMBRE ES GON</h2>
+          <p class="slider-review">Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Architecto quibusdam labore assumenda mollitia repudiandae eos!
+          </p>
+        </div>
+
+        <figure class="slider_picture">
+          <img
+            src="https://64.media.tumblr.com/d3381818fedf7ff1eda756189c729dc4/40ced8e02d8ee6d7-81/s1280x1920/15d715c9668b774f3baefe1d9200e1a66919ca29.png"
+            alt="" class="slider-img">
+        </figure>
+      </section>
+
+      <section class="slider-body" data-id="3">
+        <div class="slider-text">
+          <h2 class="subtitle">HOLA MI NOMBRE ES SEITA</h2>
+          <p class="slider-review">Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Architecto quibusdam labore assumenda mollitia repudiandae eos!
+          </p>
+        </div>
+
+        <figure class="slider_picture">
+          <img src="https://p4.wallpaperbetter.com/wallpaper/293/451/736/grave-of-the-fireflies-wallpaper-preview.jpg"
+            alt="" class="slider-img">
+        </figure>
+      </section>
+      <i id="slider-arrow2" class="fa-solid fa-arrow-right"></i>
+    </div>
+  </section>
+  <!--
+    Fin apartado slider
+  !-->
+
+  <!--
+  Inicio Apartado contenido principal
+  -->
+  <div class="contenido">
+    <hr class="hr1">
+    <br>
+    <H1 class="titulo2">¿Qué es el anime?</H1><br>
+
+    <p>Para empezar primero deberemos saber ¿qué es el anime?<br>
+
+      Conceptualmente hablando, anime es una "caricatúra o animación de origen japones el cual
+      posee mucha influencia de los mangas "novelas graficas" del mismo pais nipon
+      que suelen contar con una gran variedad de generos abarcando diversos temas.<br><br>
+
+      Si atendemos al significado literal de la palabra anime, quiere decir «animado o vivo», y aunque
+      mucha gente piensa lo contrario, no es japonesa. Sus orígenes son franceses. <br> <br>
+
+      Inicialmente se conoció como “Japanese animation”. Posteriormente cambio a la palabra
+      “Japanimation” y finalmente, una vez el género pasó al «mainstream» en los años 80 y 90, terminó
+      por conocerse como “Anime”, palabra que se mantiene en la actualidad. <br> <br>
+    </p>
+    <br>
+    <!--Sección de generos del anime, que sera agregada a una distinta paginación en proximas actualizaciones-->
+    <!--
+    <hr>
+    <ul>
+      <li>
+        <h3>KODOMO/こども</h3>
+        <br>
+        <p>La definición de Kodomo en japonés es «niño». Por ello, esta palabra es utilizada para especificar
+          que la animación va orientada mayormente a un público infantil. <br><br>
+          La temática que suele abarcar mencion de el contexto donde vive el personaje principal, tiene toques de
+          fantasía para ser más agradable a este segmento de la población. <br>
+        </p>
+      </li>
+      <br>
+      <li>
+        <h3>SHOUJO/少女</h3>
+        <br>
+        <p>La definición de Shoujo en japonés a español, puede entenderse como: «chica». <br>
+          Esto debido a que su trama se ajusta a generos más asociados con la población demografica femenina. <br> <br>
+          Suele tener tramas romanticas clasicas con tintes de comedia ligera, las cuales le asegura ser muy asequible
+          para todo publico, puesto que el consumir el producto no requiere de ser una persona muy exigente o integrada
+          en el mundo del anime, por ende en la actualidad se ha comenzado a ver su crecimiento de consumo por población
+          masculina, la cual puede disfrutar de igual manera una historia secilla, que personalmente catalogaria como:
+          «ligera» o «dominguera».
+        </p>
+      </li>
+      <br>
+      <li>
+        <h3>SHONEN/少年</h3>
+        <br>
+        <p>Este tipo de anime está dirigido a adolescentes y jóvenes, es por ello que en japonés Shonen
+          significa chico. Es el género de anime más popular con diferencia. <br><br>
+          Estos animes se caracterizan por encontrarse llenos de acción y adrenalina con tramas diversas
+          que abarcan conflictos de todo tipo, los cuales suelen caracterizarse por idealizar al protagonista,
+          habitualmente presentado como un héroe o aquel personaje inalcanzable, que suelen tener la mayoria,
+          una misma personalidad estandarizada, "Torpes, Alegres, Amistosos, Talentosos y con un fuerte sentido de
+          justicia".
+        </p>
+      </li>
+      <br>
+      <li>
+        <h3>SEINEN/青年</h3>
+        <br>
+        <p>El seinen se define del japones cómo «juventud» puesto que este tipo de anime tiene gran cantidad de
+          violencia
+          y las escenas de carácter sexual son un poco más explícitas; se honda en topicos más profundos y densos.
+          <br><br>
+          Fueron creados específicamente para el segmento de adolescentes mayores o jovenes adultos quienes los ven, no
+          como una caricatura,
+          sino más bien como una película o serie animada que suele ofrecer una gran historia. Sería la evolución
+          natural (por edad) del Shonen.
+        </p>
+        <br><br>
+      </li>
+    </ul>
+    !-->
+    </p>
+    <hr class="hr1">
+  </div>
+  <!--Inicio apartado de cards, con img, descripción y enlaces-->
+  <div class="cabecera2">
+    <br>
+    <H1 class="titulo3">
+      GÉNEROS/性別.
+    </H1>
+    <br><br>
+    <div class="contenedorA">
+      <div class="card1">
+        <img class="imgCard" src="views/assets/imagenes/Img_de_index/pokemon.jpeg" alt="">
+        <h4>KODOMO/こども</h4>
+        <br>
+        <p class="pCard">Este es un ejemplo de una de las obras, más clasicas y representativas para los animes KODOMO
+        </p>
+        <br>
+        <a href="https://www1.otakustv.com/anime/pokemon-mezase-pokemon-master">Para ver más</a>
+      </div>
+
+      <div class="card1">
+        <img class="imgCard" src="views/assets/imagenes/Img_de_index/Ore Monogatari.jpg" alt="">
+        <h4>SHOUJO/少女</h4>
+        <br>
+        <p class="pCard">Este es un ejemplo de un representante que cuenta con gran importancia y popularidad para los
+          animes SHOUJO</p>
+        <br>
+        <a href="https://www1.otakustv.com/anime/ore-monogatari">Para ver más</a>
+      </div>
+
+      <div class="card1">
+        <img class="imgCard" src="views/assets/imagenes/Img_de_index/Hunter-x-Hunter.png" alt="">
+        <h4>SHONEN/少年</h4>
+        <br>
+        <p class="pCard">Este es un ejemplo de un representante de gran importancia para los animes SHONEN</p>
+        <br>
+        <a href="https://www1.otakustv.com/anime/hunter-x-hunter-2011">Para ver más</a>
+      </div>
+
+      <div class="card1">
+        <img class="imgCard" src="views/assets/imagenes/Img_de_index/monster.webp" alt="">
+        <h4>SEINEN/青年</h4>
+        <br>
+        <p class="pCard">Este es un ejemplo de un representante para los animes SEINEN</p>
+        <br>
+        <a href="https://www1.otakustv.com/anime/monster">Para ver más</a>
+      </div>
+
+      <div class="card1">
+        <img class="imgCard" src="views/assets/imagenes/Img_de_index/paradise kiss.webp" alt="">
+        <h4>JOSEI/女性</h4>
+        <br>
+        <p class="pCard">Este es un ejemplo de un representante para los animes JOSEI</p>
+        <br>
+        <a href="https://m.animeflv.net/ver/paradis-kiss-1">Para ver más</a>
+      </div>
+
+      <div class="card1">
+        <img class="imgCard" src="views/assets/imagenes/Img_de_index/BEASTARS,_volume_1.jpg" alt="">
+        <h4>KEMONO/獣</h4>
+        <br>
+        <p class="pCard">Este es un ejemplo de un representante para los animes KEMONO</p>
+        <br>
+        <a href="https://www1.otakustv.com/anime/beastars-erbu3pwx8mbi">Para ver más</a>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <hr class="hr1">
+  <!--Fin apartado de cards, con img, descripción con enlaces-->
+
+  <!--
+  Fin Apartado contenido principal
+  -->
+
+  <!--
+  Inicio footer responsive
+  -->
+  <footer class="pie_de_pagina ">
+    <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a href=".cabecera">
+            <img src="views/assets/imagenes/Img_marca/logo_transparent.png" alt="logo del proyecto">
+          </a>
+        </figure>
+      </div>
+      <div class="box">
+        <h2>SOBRE NOSOTROS</h2>
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, impedit.</P>
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, impedit.</P>
+      </div>
+      <div class="box">
+        <h2>SIGUENOS</h2>
+        <div class="red-social">
+          <a href="#" class="fa-brands fa-facebook"></a>
+          <a href="#" class="fa-brands fa-instagram"></a>
+          <a href="#" class="fa-brands fa-twitter"></a>
+          <a href="https://github.com/deividbautista/Anime-collab" class="fa-brands fa-github"></a>
+        </div>
+      </div>
+    </div>
+    <div class="grupo-2">
+      <small>&copy; 2023 <b>MUNDO オタク</b>- Todos los derechos reservados.</small>
+    </div>
+  </footer>
+  <!--
+  Fin footer responsive
+  -->
+
+</body>
+<!--
+  Apartado para enlazar archivo java script
+-->
+<script src="views/assets/js/main_functionalities.js"></script>
+<script src="https://kit.fontawesome.com/9c61ead5a6.js" crossorigin="anonymous"></script>
+
+</html>
